@@ -33,6 +33,37 @@ header {
   background: linear-gradient(rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0.4));
 }
 
+@media (max-width: 765px) {
+  .main-container header {
+    width: 100%;
+    margin: 0;
+    justify-content: space-evenly;
+  }
+  .main-container header a {
+    font-size: 10px;
+    margin: 8px;
+    color: black;
+  }
+}
+@media (max-width: 500px) {
+  .main-container header {
+    width: 100%;
+    margin: 0;
+    justify-content: unset;
+  }
+  .main-container header .loggo {
+    font-size: 30px;
+    color: white;
+  }
+  .main-container header ul {
+    margin-top: -29px;
+  }
+  .main-container header a {
+    font-size: 10px;
+    margin: 0px 2px;
+    color: white;
+  }
+}
 header .loggo {
   position: relative;
   font-weight: 700;
@@ -42,6 +73,7 @@ header .loggo {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: 23px;
+  cursor: pointer;
 }
 
 header ul {
@@ -84,6 +116,23 @@ header.sticky {
   border-radius: 0px;
 }
 
+@media (max-width: 500px) {
+  header.sticky {
+    padding: 0px;
+  }
+  header.sticky .loggo {
+    border: 2px solid #73ff00;
+    margin-left: -15px;
+  }
+  header.sticky ul {
+    margin-top: -50px;
+    margin-left: 0;
+  }
+  header.sticky a {
+    margin-left: 5px;
+    font-size: 12px;
+  }
+}
 header.sticky ul li a {
   color: white;
   font-weight: 400;
@@ -103,28 +152,6 @@ header.sticky .loggo {
   margin-left: -50px;
 }
 
-@media (max-width: 960px) {
-  header {
-    width: 80%;
-  }
-
-  header ul li a {
-    font-size: 10px;
-    margin: 5px;
-    padding: 0;
-  }
-}
-@media (max-width: 760px) {
-  header {
-    width: 80%;
-  }
-
-  header ul li a {
-    font-size: 10px;
-    margin: 5px;
-    padding: 0;
-  }
-}
 .home-header {
   width: 100%;
   height: 100vh;
@@ -188,13 +215,23 @@ header.sticky .loggo {
     font-weight: 500;
     font-size: 60px;
     line-height: 64px;
-    font-style: italic;
   }
   .home-header .home-button1 {
     width: 80%;
     padding: 10px 10px;
     font-style: italic;
     font-size: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .home-header .home-title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 64px;
+  }
+  .home-header .home-button1 {
+    width: 80%;
+    padding: 0 20px;
   }
 }
 .food-category {
@@ -241,6 +278,21 @@ header.sticky .loggo {
     font-size: 50px;
     line-height: 64px;
     font-style: italic;
+  }
+}
+@media (max-width: 500px) {
+  .food-category-title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 64px;
+    margin: 0;
+    margin-top: -70px;
+  }
+}
+@media (max-width: 500px) {
+  .food-category-paragraph {
+    font-size: 15px;
+    margin: 0;
   }
 }
 .category-container {
@@ -385,6 +437,44 @@ header.sticky .loggo {
   padding-top: 80px;
 }
 
+@media (max-width: 965px) {
+  .restaurant-img {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .restaurant-img img {
+    margin-top: 30px;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
+}
+@media (max-width: 765px) {
+  .restaurant-img {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .restaurant-img img {
+    margin-top: 30px;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
+}
+@media (max-width: 500px) {
+  .restaurant-title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .restaurant-img {
+    width: 100%;
+  }
+  .restaurant-img img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
 .restaurant-information {
   width: 60%;
   margin-left: auto;
@@ -396,6 +486,11 @@ header.sticky .loggo {
   color: #adadad;
 }
 
+@media (max-width: 500px) {
+  .restaurant-information {
+    font-size: 15px;
+  }
+}
 .restaurant-img {
   width: 100%;
   margin-top: 30px;
@@ -426,6 +521,11 @@ header.sticky .loggo {
   margin-bottom: 80px;
 }
 
+@media (max-width: 500px) {
+  .chef-title {
+    font-size: 30px;
+  }
+}
 .about-chef-box {
   width: 80vw;
   height: fit-content;
@@ -483,6 +583,19 @@ header.sticky .loggo {
   text-align: center;
 }
 
+@media (max-width: 500px) {
+  .chef-name {
+    font-size: 20px;
+  }
+
+  .chef-level {
+    font-size: 16px;
+  }
+
+  .chef-biography {
+    font-size: 14px;
+  }
+}
 .chef-social-icon-box {
   width: 80%;
   display: flex;
@@ -522,6 +635,14 @@ header.sticky .loggo {
   margin-bottom: 80px;
 }
 
+@media (max-width: 500px) {
+  .menu-box .menu-title {
+    font-size: 30px;
+  }
+  .menu-box .menu-information {
+    font-size: 15px;
+  }
+}
 .menu-category-box {
   width: 50%;
   height: fit-content;
@@ -529,6 +650,33 @@ header.sticky .loggo {
   margin-right: auto;
 }
 
+@media (max-width: 765px) {
+  .menu-category-box {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menu-category-box .nav-menu {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 500px) {
+  .menu-category-box {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menu-category-box .nav-menu {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menu-category-box .nav-menu .nav-category {
+    font-size: 12px;
+  }
+}
 .nav-menu {
   width: 50%;
   margin-left: auto;
@@ -646,6 +794,15 @@ header.sticky .loggo {
   color: #adadad;
 }
 
+@media (max-width: 500px) {
+  .service-title {
+    font-size: 30px;
+  }
+
+  .service-information {
+    font-size: 15px;
+  }
+}
 .service-container {
   width: 80%;
   margin-left: auto;
@@ -678,6 +835,11 @@ header.sticky .loggo {
   margin-bottom: 20px;
 }
 
+@media (max-width: 500px) {
+  .cuisine-name {
+    font-size: 15px;
+  }
+}
 .cuisine-info {
   font-size: 20px;
   font-weight: 300;
@@ -686,6 +848,11 @@ header.sticky .loggo {
   text-align: center;
 }
 
+@media (max-width: 500px) {
+  .cuisine-info {
+    font-size: 15px;
+  }
+}
 .reservation-box {
   width: 70%;
   margin-left: auto;
@@ -698,6 +865,16 @@ header.sticky .loggo {
   box-shadow: 1px 1px 8px #e0dbdb;
 }
 
+@media (max-width: 765px) {
+  .reservation-box {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .reservation-box .reservation-button {
+    margin-left: 200px;
+  }
+}
 .reservation-mini-box {
   width: 100%;
   display: flex;
@@ -750,6 +927,34 @@ header.sticky .loggo {
   border: 2px solid #ff7a5c;
 }
 
+@media (max-width: 765px) {
+  .reservation-input i {
+    position: absolute;
+    margin-top: 48px;
+    margin-left: 140px;
+  }
+}
+@media (max-width: 500px) {
+  .reservation-input label {
+    font-size: 10px;
+  }
+  .reservation-input i {
+    position: absolute;
+    margin-top: 39px;
+    margin-left: 95px;
+  }
+  .reservation-input input {
+    border: 1px solid grey;
+  }
+  .reservation-input select {
+    border: 1px solid grey;
+  }
+}
+@media (max-width: 765px) {
+  .reservation-button {
+    margin-left: 100px;
+  }
+}
 .reservation-button {
   width: 30%;
   height: 38px;
@@ -765,6 +970,12 @@ header.sticky .loggo {
   border: 2px solid #ff7a5c;
 }
 
+@media (max-width: 500px) {
+  .reservation-box .reservation-button {
+    margin-left: 140px;
+    font-size: 10px;
+  }
+}
 .reservation-button:focus {
   background-color: #ff7a5c;
   color: white;
@@ -824,6 +1035,11 @@ header.sticky .loggo {
   line-height: 36px;
 }
 
+@media (max-width: 500px) {
+  .castomer-info {
+    font-size: 15px;
+  }
+}
 .customer-name {
   font-size: 18px;
   text-align: center;
@@ -871,12 +1087,45 @@ header.sticky .loggo {
   border: 2px solid #ff7a5c;
 }
 
+@media (max-width: 500px) {
+  .message-box .input-message {
+    border: 1px solid grey;
+  }
+}
+.map {
+  width: 100%;
+}
+
+@media (max-width: 765px) {
+  .map {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .map {
+    width: 100vw;
+  }
+}
 footer {
   padding-bottom: 180px;
   background-color: #0f0f0f;
   margin-top: -25px;
 }
 
+@media (max-width: 765px) {
+  footer {
+    padding-bottom: 50px;
+  }
+  footer .footer-big-box {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+  }
+  footer .footer-big-box .footer-button {
+    height: 50px;
+  }
+}
 .footer-big-box {
   width: 80%;
   height: fit-content;
@@ -913,6 +1162,12 @@ footer {
   margin-bottom: 25px;
 }
 
+@media (max-width: 500px) {
+  .footer-box .footer-button {
+    width: 70%;
+    font-size: 10px;
+  }
+}
 .footer-button {
   width: 40%;
   height: 38px;
@@ -960,6 +1215,32 @@ footer {
   margin-top: 10px;
 }
 
+@media (max-width: 765px) {
+  .footer-input input {
+    width: 200px;
+    height: 38px;
+    outline: none;
+    border: 2px solid grey;
+    border-radius: 5px;
+    color: #5c5b5b;
+  }
+  .footer-input i {
+    margin-left: 176px;
+  }
+}
+@media (max-width: 500px) {
+  .footer-input input {
+    width: 150px;
+    height: 38px;
+    outline: none;
+    border: 2px solid grey;
+    border-radius: 5px;
+    color: #5c5b5b;
+  }
+  .footer-input i {
+    margin-left: 120px;
+  }
+}
 .made {
   text-align: center;
   font-size: 15px;
@@ -978,6 +1259,12 @@ footer {
 }
 .made span:focus {
   color: #ff7a5c;
+}
+
+@media (max-width: 500px) {
+  .made {
+    font-size: 10px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
